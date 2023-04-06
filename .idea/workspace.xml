@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4de82d85-ab00-49aa-bafb-4d7876870f2a" name="Changes" comment="connection">
-      <change afterPath="$PROJECT_DIR$/src/stack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +37,14 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.stack">
+  <component name="RunManager" selected="Application.StringAnalysis">
+    <configuration name="StringAnalysis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StringAnalysis" />
+      <module name="AlgorithmJava" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="bracket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bracket" />
       <module name="AlgorithmJava" />
@@ -55,6 +61,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StringAnalysis" />
         <item itemvalue="Application.stack" />
         <item itemvalue="Application.bracket" />
       </list>
@@ -69,7 +76,17 @@
       <option name="presentableId" value="Default" />
       <updated>1668511382373</updated>
       <workItem from="1668511384606" duration="3306000" />
-      <workItem from="1668683809045" duration="6870000" />
+      <workItem from="1668683809045" duration="7251000" />
+      <workItem from="1668777744665" duration="1215000" />
+      <workItem from="1669024735479" duration="1180000" />
+      <workItem from="1669195103819" duration="659000" />
+      <workItem from="1672584735328" duration="314000" />
+      <workItem from="1672667832336" duration="12000" />
+      <workItem from="1673348159292" duration="1202000" />
+      <workItem from="1678015465804" duration="608000" />
+      <workItem from="1678188032522" duration="1374000" />
+      <workItem from="1678848975531" duration="15000" />
+      <workItem from="1680786076951" duration="1644000" />
     </task>
     <task id="LOCAL-00001" summary="connection">
       <created>1668512380715</created>
