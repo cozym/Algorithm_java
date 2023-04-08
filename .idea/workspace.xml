@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4de82d85-ab00-49aa-bafb-4d7876870f2a" name="Changes" comment="connection">
-      <change afterPath="$PROJECT_DIR$/src/WordLength.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +37,14 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.WordLength">
+  <component name="RunManager" selected="Application.Rot13">
+    <configuration name="Rot13" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Rot13" />
+      <module name="AlgorithmJava" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StringAnalysis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="StringAnalysis" />
       <module name="AlgorithmJava" />
@@ -69,6 +75,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Rot13" />
         <item itemvalue="Application.WordLength" />
         <item itemvalue="Application.StringAnalysis" />
         <item itemvalue="Application.stack" />
@@ -96,7 +103,8 @@
       <workItem from="1678188032522" duration="1374000" />
       <workItem from="1678848975531" duration="15000" />
       <workItem from="1680786076951" duration="2749000" />
-      <workItem from="1680876754264" duration="775000" />
+      <workItem from="1680876754264" duration="1103000" />
+      <workItem from="1680957550469" duration="1958000" />
     </task>
     <task id="LOCAL-00001" summary="connection">
       <created>1668512380715</created>
