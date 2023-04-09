@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4de82d85-ab00-49aa-bafb-4d7876870f2a" name="Changes" comment="connection">
+      <change afterPath="$PROJECT_DIR$/src/FourNum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +105,8 @@
       <workItem from="1678848975531" duration="15000" />
       <workItem from="1680786076951" duration="2749000" />
       <workItem from="1680876754264" duration="1103000" />
-      <workItem from="1680957550469" duration="1958000" />
+      <workItem from="1680957550469" duration="2731000" />
+      <workItem from="1681050426643" duration="116000" />
     </task>
     <task id="LOCAL-00001" summary="connection">
       <created>1668512380715</created>
