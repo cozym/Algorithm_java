@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4de82d85-ab00-49aa-bafb-4d7876870f2a" name="Changes" comment="connection">
-      <change afterPath="$PROJECT_DIR$/src/Remainder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Remainder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Remainder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +38,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.SuffixArray">
+  <component name="RunManager" selected="Application.Remainder">
     <configuration name="FourNum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FourNum" />
       <module name="AlgorithmJava" />
@@ -46,15 +46,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Rot13" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Rot13" />
+    <configuration name="Remainder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Remainder" />
       <module name="AlgorithmJava" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringAnalysis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StringAnalysis" />
+    <configuration name="Rot13" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Rot13" />
       <module name="AlgorithmJava" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -76,11 +76,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Remainder" />
         <item itemvalue="Application.SuffixArray" />
         <item itemvalue="Application.FourNum" />
         <item itemvalue="Application.Rot13" />
         <item itemvalue="Application.WordLength" />
-        <item itemvalue="Application.StringAnalysis" />
       </list>
     </recent_temporary>
   </component>
@@ -109,7 +109,7 @@
       <workItem from="1681050426643" duration="770000" />
       <workItem from="1681137144315" duration="1927000" />
       <workItem from="1681217946159" duration="347000" />
-      <workItem from="1681309722678" duration="108000" />
+      <workItem from="1681309722678" duration="2101000" />
     </task>
     <task id="LOCAL-00001" summary="connection">
       <created>1668512380715</created>
