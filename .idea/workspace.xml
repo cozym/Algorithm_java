@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4de82d85-ab00-49aa-bafb-4d7876870f2a" name="Changes" comment="connection">
+      <change afterPath="$PROJECT_DIR$/src/GcdLcm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Remainder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Remainder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +38,16 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Remainder">
+  <component name="RunManager" selected="Application.GcdLcm">
     <configuration name="FourNum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FourNum" />
+      <module name="AlgorithmJava" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GcdLcm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GcdLcm" />
       <module name="AlgorithmJava" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -67,20 +74,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordLength" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="WordLength" />
-      <module name="AlgorithmJava" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GcdLcm" />
         <item itemvalue="Application.Remainder" />
         <item itemvalue="Application.SuffixArray" />
         <item itemvalue="Application.FourNum" />
         <item itemvalue="Application.Rot13" />
-        <item itemvalue="Application.WordLength" />
       </list>
     </recent_temporary>
   </component>
@@ -109,7 +109,8 @@
       <workItem from="1681050426643" duration="770000" />
       <workItem from="1681137144315" duration="1927000" />
       <workItem from="1681217946159" duration="347000" />
-      <workItem from="1681309722678" duration="2101000" />
+      <workItem from="1681309722678" duration="2483000" />
+      <workItem from="1681394313473" duration="799000" />
     </task>
     <task id="LOCAL-00001" summary="connection">
       <created>1668512380715</created>
