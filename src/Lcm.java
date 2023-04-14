@@ -6,12 +6,21 @@ import java.io.InputStreamReader;
 public class Lcm {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int c = Integer.parseInt(br.readLine());
-        int[] arr = new int[2];
+        int r = Integer.parseInt(br.readLine());
+        String[] arr;
+        int a=0, b=0, c=0, t=0;
 
-        for(int i=0; i<c; i++) {
-            arr = br.readLine().split(' ').toString();
+        for(int i=0; i<r; i++) {
+            arr = br.readLine().split(" ");
+            a=Integer.parseInt(arr[0]);
+            b=Integer.parseInt(arr[1]);
+            c = a*b;
+            while(b!=0) {
+                t = a%b;
+                a = b;
+                b = t;
+            }
+            System.out.println(c/a);
         }
-
     }
 }
