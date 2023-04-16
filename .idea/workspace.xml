@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4de82d85-ab00-49aa-bafb-4d7876870f2a" name="Changes" comment="connection">
-      <change afterPath="$PROJECT_DIR$/src/FindPrimeNum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PrintPrimeNum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +112,8 @@
       <workItem from="1681309722678" duration="2483000" />
       <workItem from="1681394313473" duration="1430000" />
       <workItem from="1681483419068" duration="2261000" />
-      <workItem from="1681564667111" duration="1312000" />
+      <workItem from="1681564667111" duration="2554000" />
+      <workItem from="1681648832555" duration="808000" />
     </task>
     <task id="LOCAL-00001" summary="connection">
       <created>1668512380715</created>
