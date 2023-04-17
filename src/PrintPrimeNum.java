@@ -1,4 +1,3 @@
-import java.io.IOError;
 import java.io.IOException;
 
 // 소수 구하기 (1929)
