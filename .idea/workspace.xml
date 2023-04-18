@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4de82d85-ab00-49aa-bafb-4d7876870f2a" name="Changes" comment="connection">
+      <change afterPath="$PROJECT_DIR$/src/Factorial.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PrintPrimeNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PrintPrimeNum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +114,8 @@
       <workItem from="1681483419068" duration="2261000" />
       <workItem from="1681564667111" duration="2554000" />
       <workItem from="1681648832555" duration="1449000" />
+      <workItem from="1681743407100" duration="1362000" />
+      <workItem from="1681827277280" duration="85000" />
     </task>
     <task id="LOCAL-00001" summary="connection">
       <created>1668512380715</created>
