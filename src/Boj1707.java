@@ -5,10 +5,12 @@ import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 public class Boj1707 {
+    static final int GROUP_A = 1;
+    static final int GROUP_B = 2;
     static int K, V, E, v1, v2;
     static ArrayList<Integer>[] R;
     static boolean[] visit;
-    static int[] kinds;
+    static int[] groups;
     static String res;
 
     public static void main(String[] args) throws IOException {
@@ -23,12 +25,11 @@ public class Boj1707 {
             E = Integer.parseInt(st.nextToken());
             R = new ArrayList[V + 1];
             visit = new boolean[V + 1];
-            kinds = new int[V + 1];
+            groups = new int[V + 1];
             res = "YES";
             for (int numOfVertices = 0; numOfVertices <= V; numOfVertices++) {
                 R[numOfVertices] = new ArrayList<>();
             }
-            kinds[1] = 1;
             for (int numOfEdge = 0; numOfEdge < E; numOfEdge++) {
                 st = new StringTokenizer(br.readLine());
                 v1 = Integer.parseInt(st.nextToken());
@@ -36,24 +37,28 @@ public class Boj1707 {
                 R[v1].add(v2);
                 R[v2].add(v1);
             }
-            dfs(1);
+            for (int edge = 1; edge <= V; edge++) {
+                if (!visit[edge]) {
+                    dfs(edge, GROUP_A);
+                }
+            }
             System.out.println(res);
         }
     }
 
-    static void dfs(int node) {
+    static void dfs(int node, int group) {
         visit[node] = true;
+        if (groups[node] == 0) {
+            groups[node] = group;
+        }
         for (int nextNode : R[node]) {
+            if (groups[node] == groups[nextNode]) {
+                res = "NO";
+                return;
+            }
             if (!visit[nextNode]) {
-                if (kinds[node] == kinds[nextNode]) {
-                    res = "NO";
-                    return;
-                } else if (kinds[nextNode] == 0) {
-                    kinds[nextNode] = kinds[node]==1 ? 2 : 1;
-                }
-                dfs(nextNode);
+                dfs(nextNode, groups[node] == GROUP_A ? GROUP_B : GROUP_A);
             }
         }
-        visit[node] = false;
     }
 }
