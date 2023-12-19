@@ -2,6 +2,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class Boj1707 {
@@ -39,25 +41,47 @@ public class Boj1707 {
             }
             for (int edge = 1; edge <= V; edge++) {
                 if (!visit[edge]) {
-                    dfs(edge, GROUP_A);
+                    bfs(edge);
                 }
             }
             System.out.println(res);
         }
     }
 
-    static void dfs(int node, int group) {
+//    static void dfs(int node, int group) {
+//        visit[node] = true;
+//        if (groups[node] == 0) {
+//            groups[node] = group;
+//        }
+//        for (int nextNode : R[node]) {
+//            if (groups[node] == groups[nextNode]) {
+//                res = "NO";
+//                return;
+//            }
+//            if (!visit[nextNode]) {
+//                dfs(nextNode, groups[node] == GROUP_A ? GROUP_B : GROUP_A);
+//            }
+//        }
+//    }
+
+    static void bfs(int node) {
+        Queue<Integer> q = new LinkedList<>();
+        q.offer(node);
         visit[node] = true;
-        if (groups[node] == 0) {
-            groups[node] = group;
-        }
-        for (int nextNode : R[node]) {
-            if (groups[node] == groups[nextNode]) {
-                res = "NO";
-                return;
-            }
-            if (!visit[nextNode]) {
-                dfs(nextNode, groups[node] == GROUP_A ? GROUP_B : GROUP_A);
+        groups[node] = GROUP_A;
+
+        while(!q.isEmpty()) {
+            int currentNode = q.poll();
+            visit[currentNode] = true;
+            for (int nextNode : R[currentNode]) {
+                if (groups[currentNode] == groups[nextNode]) {
+                    res = "NO";
+                    return;
+                }
+                if (!visit[nextNode]) {
+                    groups[nextNode] = groups[currentNode] == GROUP_A ? GROUP_B : GROUP_A;
+                    q.offer(nextNode);
+                }
             }
         }
     }
