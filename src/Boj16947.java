@@ -2,7 +2,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
@@ -49,9 +48,6 @@ public class Boj16947 {
             }
         }
 
-        System.out.println(Arrays.toString(station));
-        System.out.println(circle);
-        System.out.println(local);
         for (int i = 1; i < N + 1; i++) {
             if (i==N) {
                 System.out.printf("%d", res[i]);
@@ -62,13 +58,9 @@ public class Boj16947 {
     }
 
     static void defineLocalAndCircleDFS(int start, int pre, int next) {
-        int nextStation;
         visited[next] = true;
-        if (circle.contains(start)) {
-            return;
-        }
-        for (int i = 0; i < station[next].size(); i++) {
-            nextStation = station[next].get(i);
+
+        for (int nextStation : station[next]) {
             if (start == nextStation && pre != nextStation) {
                 if (!circle.contains(start)) {
                     circle.add(start);
@@ -82,16 +74,14 @@ public class Boj16947 {
     }
 
     static void searchMinLocalToCircle(int localStation) {
-        int distance = 1;
+        int distance = 0;
         visited[localStation] = true;
         Queue<Integer> q = new LinkedList<>();
-        for (int i = 0; i < station[localStation].size(); i++) {
-            int firstStation = station[localStation].get(i);
-            q.offer(firstStation);
-        }
+        q.offer(localStation);
 
         while (!q.isEmpty()) {
-            for (int i = 0; i < q.size(); i++) {
+            int sizeOfQ = q.size();
+            for (int i = 0; i < sizeOfQ; i++) {
                 int nextStation = q.poll();
                 visited[nextStation] = true;
                 if (circle.contains(nextStation)) {
@@ -101,11 +91,12 @@ public class Boj16947 {
                 for (int j = 0; j < station[nextStation].size(); j++) {
                     int putInQ = station[nextStation].get(j);
                     if (!visited[putInQ]) {
+                        //visited[putInQ] = true;
                         q.offer(putInQ);
                     }
                 }
             }
-            distance++;
+            distance += 1;
         }
     }
 }
