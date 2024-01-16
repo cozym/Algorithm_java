@@ -3,12 +3,18 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.StringTokenizer;
 
 // 서울 지하철 2호선
 public class Boj16947 {
     static int N;
     static ArrayList<Integer>[] station;
+    static ArrayList<Integer> circle;
+    static ArrayList<Integer> local;
+    static boolean[] visited;
+    static int[] res;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -28,7 +34,79 @@ public class Boj16947 {
             station[right].add(left);
         }
 
+        circle = new ArrayList<>();
+        local = new ArrayList<>();
+        res = new int[N + 1];
+        for (int startStation = 1; startStation < station.length; startStation++) {
+            visited = new boolean[N + 1];
+            defineLocalAndCircleDFS(startStation, startStation, startStation);
+        }
+
+        for (int i = 0; i < N; i++) {
+            if (!circle.contains(i + 1)) {
+                visited = new boolean[N + 1];
+                searchMinLocalToCircle(i + 1);
+            }
+        }
+
         System.out.println(Arrays.toString(station));
+        System.out.println(circle);
+        System.out.println(local);
+        for (int i = 1; i < N + 1; i++) {
+            if (i==N) {
+                System.out.printf("%d", res[i]);
+            } else {
+                System.out.printf("%d ", res[i]);
+            }
+        }
+    }
+
+    static void defineLocalAndCircleDFS(int start, int pre, int next) {
+        int nextStation;
+        visited[next] = true;
+        if (circle.contains(start)) {
+            return;
+        }
+        for (int i = 0; i < station[next].size(); i++) {
+            nextStation = station[next].get(i);
+            if (start == nextStation && pre != nextStation) {
+                if (!circle.contains(start)) {
+                    circle.add(start);
+                }
+                return;
+            }
+            if (!visited[nextStation]) {
+                defineLocalAndCircleDFS(start, next, nextStation);
+            }
+        }
+    }
+
+    static void searchMinLocalToCircle(int localStation) {
+        int distance = 1;
+        visited[localStation] = true;
+        Queue<Integer> q = new LinkedList<>();
+        for (int i = 0; i < station[localStation].size(); i++) {
+            int firstStation = station[localStation].get(i);
+            q.offer(firstStation);
+        }
+
+        while (!q.isEmpty()) {
+            for (int i = 0; i < q.size(); i++) {
+                int nextStation = q.poll();
+                visited[nextStation] = true;
+                if (circle.contains(nextStation)) {
+                    res[localStation] = distance;
+                    return;
+                }
+                for (int j = 0; j < station[nextStation].size(); j++) {
+                    int putInQ = station[nextStation].get(j);
+                    if (!visited[putInQ]) {
+                        q.offer(putInQ);
+                    }
+                }
+            }
+            distance++;
+        }
     }
 }
 
