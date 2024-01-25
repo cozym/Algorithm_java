@@ -37,10 +37,10 @@ public class Boj2503 {
 
         for (int i = 0; i < N; i++) {
             st = new StringTokenizer(br.readLine());
-            question = .nextToken();
+            //question = .nextToken();
             strike = Integer.parseInt(st.nextToken());
             ball = Integer.parseInt(st.nextToken());
-            checkPossibility(question,strike,ball);
+            //checkPossibility(question,strike,ball);
         }
     }
 
@@ -49,7 +49,7 @@ public class Boj2503 {
             int localStrike = 0;
             int localBall = 0;
             for (int index = 0; index < 3; index++) {
-                O.num.charAt(index) == question.
+                //O.num.charAt(index) == question.
             }
         }
     }
