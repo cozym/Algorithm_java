@@ -63,7 +63,7 @@
       <command value="14 14 26456 2 28 13228 3307 7 23149 8 6614 46298 56 4 92596" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Boj13023">
     <configuration name="Boj13023" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Boj13023" />
       <module name="AlgorithmJava" />
@@ -252,7 +252,8 @@
       <workItem from="1706449490349" duration="601000" />
       <workItem from="1706507473316" duration="2415000" />
       <workItem from="1706620910008" duration="1433000" />
-      <workItem from="1706679227562" duration="12957000" />
+      <workItem from="1706679227562" duration="13633000" />
+      <workItem from="1706798158779" duration="617000" />
     </task>
     <task id="LOCAL-00001" summary="connection">
       <created>1668512380715</created>
